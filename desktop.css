@@ -1,0 +1,50 @@
+@media (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }  
+
+    .contact {
+        cursor: not-allowed;
+    }
+
+    .landing-page-text {
+        width: 60%;
+    }
+
+    .about h1 {
+        text-align: left;
+    }
+    
+    .offers h1 {
+        text-align: left;
+    }
+
+    .services {
+        width: 720px;
+    }
+
+    .services-box {
+        width: 30%;
+        padding-bottom: 30%;
+    }
+
+    .services-box:nth-of-type(2n) {
+        margin-right: 5%;
+    }
+
+    .services-box:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    .services-box:hover {
+        transform: scale(1.05);
+    }
+
+    .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    }
+}
