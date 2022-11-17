@@ -1,0 +1,287 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: #4e4e4e;
+	font-size: 18px;
+	z-index: 1;
+}
+
+button {
+	cursor: pointer;
+}
+
+.btn {
+	padding: 8px 45px;
+	border: 3px solid white;
+	font-size: 18px;
+	color: white;
+	background-color: transparent;
+	transition: 0.8s linear;
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+}
+
+/* ********** */
+/* Navigation */
+/* ********** */
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+}
+
+nav a {
+	margin-left: 45px;
+	color: white;
+	text-decoration: none;
+}
+
+.nav-links a {
+	margin-left: 45px;
+	color: #f1f1f1;
+}
+
+nav .container > a {
+	margin-left: 0;
+	font-weight: bold;
+}
+
+.nav-links a:first-of-type {
+	margin-left: 0;
+}
+
+.nav-links .contact-link {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* ******************** */
+/* Landing page section */
+/* ******************** */
+
+.landing-page {
+	height: 100vh;
+	box-sizing: border-box;
+	padding-top: 50px;
+	box-sizing: border-box;
+
+	background-image: url('https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80');
+	background-size: cover;
+	background-position: center;
+}
+
+.landing-page-shadow {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-page-shadow .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.landing-page-hero-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 60%;
+	height: 30%;
+	font-weight: bold;
+}
+
+.landing-page-hero-text h1 {
+	font-size: 36px;
+}
+
+.landing-page-hero-text h2 {
+	font-size: 18px;
+}
+
+/* **************** */
+/* Our crew section */
+/* **************** */
+
+.our-crew {
+	background-color: #f1f1f1;
+	padding: 50px 0;
+}
+
+.our-crew .container h1 {
+	margin-bottom: 50px;
+	font-size: 36px;
+	color: #152d41;
+	font-weight: bold;
+}
+
+.employee {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.employee-even {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.employee .employee-picture {
+	width: 200px;
+	height: 200px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	margin-right: 50px;
+}
+
+.employee-even .employee-picture {
+	margin-right: 0;
+	margin-left: 50px;
+}
+
+.employee:last-of-type {
+	margin-bottom: 0;
+}
+
+.employee-info {
+	font-size: 18px;
+}
+
+.employee-info h3 {
+	font-weight: bold;
+	color: black;
+	font-size: 18px;
+	padding-bottom: 25px;
+}
+
+.employee-info p {
+	color: black;
+	font-size: 18px;
+}
+
+.employee-even .employee-info {
+	text-align: right;
+}
+
+/*****************/
+/* Offer section */
+/*****************/
+
+.offer {
+	background-color: #405d78;
+	padding: 50px 0;
+}
+
+.offer .container h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.box-container {
+	display: grid;
+	grid-template-columns: 28% 28% 28%;
+	grid-template-rows: auto;
+	grid-gap: 8%;
+	grid-row-gap: 50px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.box-container > div:after {
+	content: '';
+	display: block;
+	padding-bottom: 100%;
+	background-color: #f1f1f1;
+}
+
+.box-container > div {
+	position: relative;
+}
+
+.box-container .dot {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #e07a64;
+}
+
+.box-container .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #000;
+	font-size: 24px;
+	font-weight: bold;
+	transition: 0.5s ease-out;
+}
+
+.box-container .content:hover {
+	transform: scale(1.05);
+}
+
+.box-container .content p {
+	font-weight: 200;
+	font-size: 18px;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer {
+	width: 100%;
+	height: 70px;
+	background-color: #4e4e4e;
+	color: white;
+}
+
+footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+footer .container p {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+footer .container .icons a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer .container .icons a i {
+	padding-right: 20px;
+	font-size: 36px;
+}
+html {
+	scroll-behavior: smooth;
+}
